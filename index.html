@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo">
+        <!-- Logo Image -->
+        <img src="assets/logo.png" alt="Company Logo" />
+        <p>Marmeto</p>
+      </div>
+      <!-- Navigation Menu -->
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <!-- Navigation Icons (Search, Wishlist, Cart) -->
+      <div class="navImg">
+        <img src="assets/search.png" alt="Search" />
+        <img src="assets/heart.png" alt="Wishlist" />
+        <img src="assets/cart.png" alt="Shopping Cart" />
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <img src="assets/hero.png" alt="Hero Image" class="hero-img" />
+        <div class="hero-text">
+          <img src="assets/logo.png" alt="Logo" />
+          <h1>Cart</h1>
+          <p>Home > Cart</p>
+        </div>
+      </section>
+
+      <!-- Shopping Cart Section -->
+      <div class="cart-container">
+        <div class="cart-header">
+          <!-- Cart Items Section -->
+          <div class="cart-info">
+            <!-- Table Headers for Cart Items -->
+            <div class="cart-columns">
+              <span>Product</span>
+              <span>Price</span>
+              <span>Quantity</span>
+              <span>Subtotal</span>
+            </div>
+            <!-- Dynamic Cart Items Will be Added Here -->
+            <div class="cart-items" id="cart-items"></div>
+          </div>
+
+          <!-- Cart Summary Section -->
+          <div class="cart-summary">
+            <h1>Cart Totals</h1>
+            <p>Subtotal: <span id="subtotal">Rs 250,000.00</span></p>
+            <p>Total: <span id="total">Rs 250,000.00</span></p>
+            <!-- Checkout Button -->
+            <button id="checkout">Check Out</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <footer>
+        <div class="features">
+          <!-- Feature: High Quality -->
+          <div class="feature">
+            <img src="assets/trophy.png" alt="High Quality" />
+            <div>
+              <h3>High Quality</h3>
+              <p>Crafted from top materials</p>
+            </div>
+          </div>
+          <!-- Feature: Warranty Protection -->
+          <div class="feature">
+            <img src="assets/guarantee.png" alt="Warranty Protection" />
+            <div>
+              <h3>Warranty Protection</h3>
+              <p>Over 2 years</p>
+            </div>
+          </div>
+          <!-- Feature: Free Shipping -->
+          <div class="feature">
+            <img src="assets/shipping.png" alt="Free Shipping" />
+            <div>
+              <h3>Free Shipping</h3>
+              <p>Order over ₹150</p>
+            </div>
+          </div>
+          <!-- Feature: 24/7 Support -->
+          <div class="feature">
+            <img src="assets/customer-support.png" alt="24/7 Support" />
+            <div>
+              <h3>24/7 Support</h3>
+              <p>Dedicated support</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
